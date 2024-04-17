@@ -68,4 +68,4 @@ jobs:
     - uses: actions/upload-artifact@v4
       with:
         name: veracode-artifact
-        path: ${{ env.veracode_artifact }}
+        path: target/${{ env.veracode_artifact }}
