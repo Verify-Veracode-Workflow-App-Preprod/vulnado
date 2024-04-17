@@ -3,10 +3,8 @@ name: Veracode Build
 run-name: Vulnado Build
 
 on:
-  push:
-    branches:
-      - main
-      - 'releases/**'
+  repository_dispatch:
+    types: [vulnado-build]
 
 jobs:
   build:
